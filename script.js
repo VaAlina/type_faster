@@ -1,4 +1,3 @@
-
 var generateSign = function(){
 var array = ["a", "b", "c", "d", "e", "f", "g", "h", "i","j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];//Работает.
 
@@ -12,9 +11,14 @@ document.getElementById("word").textContent = letter;//Записываю в п�
 }
 
 var compare = function(){
-   var first = document.getElementById("inputValue").value;
-   if(first == letter){
-   alert('you win!')}else{
-   alert(first);
+   var userInput = document.getElementById("inputValue").value;//Получить,введённый пользователем 
+   if(userInput == letter){
+     $(document).ready(function(){
+	   $("span:contains('" + letter + "')").addClass("correct");
+	 });
+     //alert('you win!');
+   }else{
+     alert(userInput);
    };
 }
+
