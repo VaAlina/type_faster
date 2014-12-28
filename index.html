@@ -6,7 +6,7 @@
 <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body onload="generateSign()">
 
 <div id="qwerty">
 <span id="q" class="key">q</span>
@@ -43,9 +43,8 @@
 <span id="m" class="key">m</span>
 </div>
 
-<input id="inputValue" onkeypress="compareValues()" maxlength="1" autocomplete="off" autofocus />
+<input id="inputValue" onkeyup="compare()" maxlength="1" autocomplete="off" autofocus />
 <div id="word"></div>
 
 </body>
 </html>
-
