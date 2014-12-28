@@ -7,18 +7,19 @@ var getRandomLetter = function () {
 
 letter = getRandomLetter();//Присваиваю переменной функцию. Работает.
 document.getElementById("word").textContent = letter;//Записываю в пустой div случайную переменную letter. Работает.
-
+$(document).ready(function(){
+   $("span:contains('" + letter + "')").addClass("chosen");//Выделить букву, которую следует ввести синим.
+});
 }
 
 var compare = function(){
+   $(document).ready(function(){
    var userInput = document.getElementById("inputValue").value;//Получить,введённый пользователем 
-   if(userInput == letter){
-     $(document).ready(function(){
-	   $("span:contains('" + letter + "')").addClass("correct");
-	 });
-     //alert('you win!');
+   if(userInput == letter){//Если пользователь ввёл правильный символ, выделяем его зелёным.
+     $("span:contains('" + letter + "')").addClass("correct");
    }else{
-     alert(userInput);
+     $("span:contains('" + userInput + "')").addClass("incorrect");//Иначе, выделяем введённый символ красным.
    };
+     });
 }
 
