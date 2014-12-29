@@ -17,5 +17,6 @@ $("span:contains('" + letter + "')").addClass("correct");
 }else{
 $("span:contains('" + userInput + "')").addClass("incorrect");//Иначе, выделяем введённый символ красным.
 };
+location.reload();//Перезагрузить страницу. Пока, единственный работающий вариант.
 });
 }
