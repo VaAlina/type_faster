@@ -38,4 +38,4 @@ if($("span").hasClass("incorrect")){
 }
 generateSign();//Вызвать generateSign().
 });
-}
+} 
