@@ -17,6 +17,25 @@ $("span:contains('" + letter + "')").addClass("correct");
 }else{
 $("span:contains('" + userInput + "')").addClass("incorrect");//Иначе, выделяем введённый символ красным.
 };
-location.reload();//Перезагрузить страницу. Пока, единственный работающий вариант.
+});
+setTimeout(function(){ clear(); }, 500);//Позволю системе отобразить результаты ввода (окрашибание символов в красный или зелёный цвет).
+}
+
+var clear = function(){
+$(document).ready(function(){
+document.getElementById("inputValue").value = "";//Очистить поле ввода.
+letter = "";//Присвоить переменным пустую строку.
+userInput = "";
+
+if($("span").hasClass("chosen")){//Поудалять все, присвоенные ранее, классы.
+   $("span").removeClass("chosen")
+}
+if($("span").hasClass("correct")){
+   $("span").removeClass("correct")
+}
+if($("span").hasClass("incorrect")){
+   $("span").removeClass("incorrect")
+}
+generateSign();//Вызвать generateSign().
 });
 }
