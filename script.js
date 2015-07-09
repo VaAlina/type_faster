@@ -29,15 +29,7 @@ var clear = function() {
         letter = ""; //Присвоить переменным пустую строку.
         userInput = "";
 
-        if ($("span").hasClass("chosen")) { //Поудалять все, присвоенные ранее, классы.
-            $("span").removeClass("chosen")
-        }
-        if ($("span").hasClass("correct")) {
-            $("span").removeClass("correct")
-        }
-        if ($("span").hasClass("incorrect")) {
-            $("span").removeClass("incorrect")
-        }
+        $("span").removeClass("chosen, correct, incorrect");//Поудалять все, присвоенные ранее, классы.
         generateSign(); //Вызвать generateSign().
     });
 }
