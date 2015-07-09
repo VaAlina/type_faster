@@ -1,34 +1,25 @@
 body{
-background-image: url(bi.jpg);
+    background-color: #f5f5f5;
 }
 div{
-background-color: black;
-color: white;
-text-align: center;
-padding: 5px;
-font-size: 300%;
-letter-spacing: 10px;
-font-family: "Courier New", Courier, monospace, "Lucida Console";
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 300%;
+    letter-spacing: 10px;
+    font-family: "Courier New", Courier, monospace, "Lucida Console";
 }
 .chosen{
 color: blue;
 }
 .correct{
-color: green;
+    color: green;
 }
 .incorrect{
-color: rad;
+    color: red;
 }
 .key{
 //border: 2px solid white;
 //padding: 5px;
-}
-#qwerty{
-
-}
-#asd{
-
-}
-#zxc{
-
 }
