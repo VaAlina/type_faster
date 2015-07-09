@@ -11,7 +11,7 @@ div{
     font-family: "Courier New", Courier, monospace, "Lucida Console";
 }
 .chosen{
-color: blue;
+    color: blue;
 }
 .correct{
     color: green;
@@ -20,6 +20,6 @@ color: blue;
     color: red;
 }
 .key{
-//border: 2px solid white;
-//padding: 5px;
+    //border: 2px solid white;
+    //padding: 5px;
 }
